@@ -1,5 +1,6 @@
 #title{
   background-color: #ff4c68;
+
 }
 
 body{
@@ -37,10 +38,14 @@ h1{
 .buttons{
   margin: 5% 3% 5% 0%;
 }
-.iphone6{
-  width: 60%;
-  transform: rotate(25deg);
 
+.iphone6{
+position:absolute;
+top:8px;
+right: 25px;
+z-index: 0;
+transform: rotate(25deg);
+width:60%;
 }
 
 .nav-item{
@@ -56,8 +61,6 @@ h1{
 			position:relative;
 		text-align: center;
 		padding:7% 15%;
-
-
 
 	}
 
@@ -108,16 +111,50 @@ border-radius:100%;
   padding: 7% 12%;
 
 }
+.card{
+  margin-top: 20px;
+
+}
 /* Call to Action */
+
 
 h3{
   font-family: 24px 'Montserrat', sans-serif;
   text-align: center;
-  padding: 0px 0px 8 px;
-  font-weight: 600;
+  padding: 7% 12%;
+  font-weight: 800;
   font-size: 2.5rem;
+
+ position:relative;
+
 }
 
+#cta{
+  color:white;
+  background-color: #ff4c68;
+
+}
+  .buttons{
+    margin: 5% 3% 5% 0%;
+  }
+
+/*Media Queries*/
+
+@media (max-width: 993px) {
+
+#title{
+  text-align: center;
+}
+
+.iphone6{
+  width: 60%;
+  transform: rotate(0deg);
+margin-left: 2rem;
+position: absolute;
 
 
 }
+
+  h1{
+    font-size: 3rem;
+  }
